@@ -1,0 +1,54 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title>Lista Pessoa</ion-title>
+    <ion-buttons slot="start">
+      <ion-back-button defaultHref="cadastro"></ion-back-button>
+    </ion-buttons>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <ion-card *NgFor = "let re of listaResource">
+    
+    <h2>{{re.id}}</h2>
+    <p>{{re.name}}</p>
+    <p>{{re.year}}</p>
+    <p>{{re.color}}</p>
+
+<!--    <ion-item>
+      <ion-label>
+        <strong>ID:  {{unknown.id}}</strong>
+      </ion-label>
+    </ion-item>
+
+    <ion-item>
+      <ion-label>
+        <strong>Nome: {{unknown.name}}</strong>
+      </ion-label>
+    </ion-item>
+
+    <ion-item>
+      <ion-label>
+        <strong>Profissão: {{unknown.year}}</strong>
+      </ion-label>
+    </ion-item>
+
+    <ion-item>
+      <ion-label>
+        <strong>Data de Criação: </strong>
+      </ion-label>
+    </ion-item>
+-->
+
+
+  </ion-card>
+
+
+
+
+
+</ion-content>
+
+<ion-footer>
+  <ion-button color="success" fill="solid" expand="block" routerLink="/home">Voltar</ion-button>
+</ion-footer>

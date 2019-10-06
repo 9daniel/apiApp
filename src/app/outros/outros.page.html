@@ -1,0 +1,38 @@
+<ion-header>
+    <ion-toolbar color="success">
+        <ion-buttons slot="start">
+            <ion-back-button defaultHref="home"></ion-back-button>
+          </ion-buttons>
+      <ion-title>Lista de Recursos</ion-title>
+    </ion-toolbar>
+  </ion-header>
+  
+  <ion-content > 
+         
+          <ion-item-sliding  *ngFor="let outross of listaOutros">
+            
+            <ion-card>
+            <ion-item>
+              <ion-label>
+                <h2 >
+                  Nome: {{outross.name}}
+                </h2>
+                <p>Ano: {{outross.year}}</p>
+                <p>Cor: {{outross.color}}</p>
+                <p>Valor: {{outross.pantone_value}}</p>
+      
+              </ion-label>
+            </ion-item>
+          </ion-card>
+      
+            <ion-item-options>
+              <ion-item-option color="danger">
+                <ion-icon slot="start" name="trash"></ion-icon>
+                Excluir
+              </ion-item-option>
+            </ion-item-options>
+          </ion-item-sliding>
+      
+  
+  </ion-content>
+  
